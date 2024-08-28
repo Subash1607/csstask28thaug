@@ -1,0 +1,34 @@
+:root{
+    --box-width: 300px;
+    --box-height: 300px;
+    --box-background-color: rgb(142, 180, 18);
+
+    --box-color: black;
+    --border: 4px solid black;
+    
+}
+body{
+    margin: 100px;
+
+}
+
+body::before{
+    content: "THIS IS THE BOX ";
+    display: block;
+    width: var(--box-width);
+    height: var(--box-height);
+    background-color: var(--box-background-color);
+    color: var(--box-color);
+    border: var(--border);
+    margin-bottom: 30px;
+}
+
+body::after{
+    content: "This is the second Box";
+    display: block;
+    width: var(--box-width);
+    height: var(--box-height);
+    background-color: rgb(255, 206, 10);
+    color: var(--box-color);
+    border: var(--border);
+}
